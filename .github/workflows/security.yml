@@ -34,7 +34,7 @@ jobs:
       - name: Run IAM auditor tests
         working-directory: iam-auditor
         run: |
-          pytest -q
+          PYTHONPATH=. pytest -q
 
   aws-iam-audit:
     name: AWS IAM Audit
